@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f6fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Layout Principal */
+.cv-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    min-height: 100vh;
+}
+
+/* Sidebar Izquierdo (Dark) */
+.cv-sidebar {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 40px 30px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+/* Panel Derecho (Contenido) */
+.cv-content {
+    background-color: #ffffff;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+/* ============ PERFIL ============ */
+.perfil-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.perfil-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #00BCD4;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+.perfil-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.perfil-card p {
+    font-size: 14px;
+    color: #b0bec5;
+    margin: 5px 0;
+}
+
+/* ============ CONTACTO ============ */
+.contact-section {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(0, 188, 212, 0.3);
+}
+
+.contact-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00BCD4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #cfd8dc;
+}
+
+.contact-item i {
+    width: 20px;
+    color: #00BCD4;
+    margin-right: 12px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.contact-item .contact-text {
+    word-break: break-word;
+}
+
+/* ============ REFERENCIAS ============ */
+.referencias-section {
+    margin-top: 0;
+}
+
+.ref-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00BCD4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ref-group {
+    margin-bottom: 25px;
+}
+
+.ref-company {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.ref-person {
+    font-size: 12px;
+    color: #b0bec5;
+    margin-bottom: 4px;
+}
+
+.ref-phone {
+    font-size: 12px;
+    color: #90caf9;
+}
+
+/* ============ SECCIONES DE CONTENIDO ============ */
+.section {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #eceff1;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.section h3:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to bottom, #00BCD4, #4FC3F7);
+    margin-right: 10px;
+}
+
+.section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00BCD4;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.section p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.section ul li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+/* ============ BADGES (Habilidades) ============ */
+.badge {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.badge-primary {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.badge-secondary {
+    background-color: #455a64;
+    color: white;
+}
+
+.badge-success {
+    background-color: #26a69a;
+    color: white;
+}
+
+.badge-dark {
+    background-color: #263238;
+    color: #00BCD4;
+}
+
+.badge-warning {
+    background-color: #ffa726;
+    color: white;
+}
+
+.badge-info {
+    background-color: #5c6bc0;
+    color: white;
+}
+
+.badge-danger {
+    background-color: #ef5350;
+    color: white;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+    .cv-container {
+        grid-template-columns: 40% 60%;
+    }
+    
+    .cv-sidebar {
+        padding: 30px 20px;
+    }
+    
+    .cv-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-sidebar {
+        min-height: auto;
+        padding: 30px 20px;
+        box-shadow: none;
+        border-bottom: 3px solid #00BCD4;
+    }
+    
+    .cv-content {
+        padding: 20px;
+    }
+}
+
+/* Scrollbar personalizada */
+.cv-sidebar::-webkit-scrollbar,
+.cv-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cv-sidebar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cv-sidebar::-webkit-scrollbar-thumb {
+    background: #00BCD4;
+    border-radius: 4px;
+}
+
+.cv-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #4FC3F7;
+}
+
+.cv-content::-webkit-scrollbar-track {
+    background: #f5f6fa;
+}
+
+.cv-content::-webkit-scrollbar-thumb {
+    background: #00BCD4;
+    border-radius: 4px;
+}
+
+.cv-content::-webkit-scrollbar-thumb:hover {
+    background: #4FC3F7;
+}
