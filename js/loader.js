@@ -19,3 +19,4 @@ cargarVista("experiencia", "vistas/experiencia.html");
 cargarVista("trayectoria", "vistas/trayectoria.html");
 cargarVista("educacion", "vistas/educacion.html");
 cargarVista("habilidades", "vistas/habilidades.html");
+cargarVista("gustos", "vistas/gustos.html");
